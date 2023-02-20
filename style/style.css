@@ -25,3 +25,37 @@ body{
 .container{
     padding: 15px;
 }
+
+/*UTILITIES*/
+
+
+/*HEADER*/
+header{
+    background-color: var(--secondary-color);
+    color: var(--lightcolor);
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 10000;
+
+}
+
+
+
+/*MAIN*/
+main{
+    margin-top: 80px;
+}
+
+
+
+/*FOOTER*/
+footer{
+    background-color: var(--darkcolor);
+    color: var(--lightcolor);
+}
+
+
+
+/*RESPONSIVE*/
