@@ -1,5 +1,27 @@
+/*GENERAL*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root{
+    --secondary-color: #0084FD;
+    --darkcolor: #333333;
+    --lightcolor: #FFFFFF;
+    --primary-color: #9792E4;
+    --bg-card: #B5DDFF;
+    --contrast-color: #FDC15F;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--lightcolor);
+}
+
+.container{
+    padding: 15px;
 }
