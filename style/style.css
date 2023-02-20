@@ -66,6 +66,20 @@ main{
     margin-top: 80px;
 }
 
+.even{
+    background-color: var(--primary-color);
+}
+
+.card{
+    background-color: var(--bg-card);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.card .image{
+    max-width: 100%;
+}
+
 
 
 /*FOOTER*/
