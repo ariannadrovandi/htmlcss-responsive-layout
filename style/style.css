@@ -41,6 +41,24 @@ header{
 
 }
 
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display: none;
+}
+
+header nav a {
+    color: var(--lightcolor);
+}
+
+ul{
+    list-style: none;
+}
+
 
 
 /*MAIN*/
