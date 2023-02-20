@@ -97,5 +97,12 @@ footer{
         flex-flow: row wrap;
         gap: 10px;
     }
+    #intro .card{
+        width: calc((100% / 3) - 10px);
+    }
+
+    #intro .card:first-child{
+        width: calc(((100% / 3) * 2) - 10px);
+    }
 
 }
