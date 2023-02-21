@@ -41,12 +41,6 @@ body{
     margin-right: 30px;
 }
 
-.button{
-    padding: 10px;
-    color: var(--lightcolor);
-    border-radius: 10px;
-}
-
 a{
     text-decoration: none;
 }
@@ -63,7 +57,13 @@ img{
     max-width: 100%;
 }
 
-
+.btn{
+    display: inline-block;
+    padding: 6px 30px;
+    border-radius: 10px;
+    color: var(--lightcolor);
+    background-color: var(--primary-color);
+}
 
 /*HEADER*/
 header{
@@ -155,6 +155,17 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#features .card{
+    background-color: var(--lightcolor);
+    color: var(--text-card);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#features .card h3, #features .card h4{
+    color: var(--primary-color);
 }
 
 
