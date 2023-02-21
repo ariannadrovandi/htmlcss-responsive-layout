@@ -211,7 +211,20 @@ footer{
     }
 
     #intro .card:first-child{
-        width: calc(((100% / 3) * 2) - 10px);
+        width: calc((100% / 3 * 2) - 10px);
+    }
+
+    #features .card{
+        width: calc((100% / 2) - 10px);
+    }
+
+    #about-us .col:first-child{
+        width: calc(60% - 10px);
+    }
+
+    #about-us .col:last-child{
+        width: calc(40% - 10px);
     }
 
 }
+
