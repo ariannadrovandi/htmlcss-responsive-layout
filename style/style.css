@@ -31,6 +31,10 @@ body{
     margin: 0 auto;  
 }
 
+section{
+    scroll-margin-top: 80px;
+}
+
 /*UTILITIES*/
 .text-center{
     text-align: center;
@@ -207,6 +211,7 @@ footer{
         display: flex;
         flex-flow: row wrap;
         gap: 10px;
+        justify-content: center;
     }
     #intro .card{
         width: calc((100% / 3) - 10px);
