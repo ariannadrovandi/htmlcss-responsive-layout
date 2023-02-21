@@ -22,10 +22,13 @@ html{
 
 body{
     background-color: var(--lightcolor);
+    color: var(--darkcolor);
 }
 
 .container{
-    padding: 20px;   
+    padding: 15px; 
+    max-width: 600px;
+    margin: 0 auto;  
 }
 
 /*UTILITIES*/
@@ -38,18 +41,28 @@ body{
     margin-right: 30px;
 }
 
-
-
 .button{
     padding: 10px;
     color: var(--lightcolor);
     border-radius: 10px;
 }
 
-
 a{
     text-decoration: none;
 }
+
+.rounded{
+    border-radius: 20px;
+}
+
+.rounded-big{
+    border-radius: 50px;
+}
+
+img{
+    max-width: 100%;
+}
+
 
 
 /*HEADER*/
@@ -94,16 +107,16 @@ main{
 }
 
 .card{
-    background-color: var(--bg-card);
-    border-radius: 20px;
-    margin-bottom: 10px;
-    padding: 50px 30px 0 30px;
-    color: var(--text-card);
+    padding: 20px;
+    /*color: var(--text-card);*/
 }
 
-h3{
-    font-size: 30px;
+#intro .card h3, #intro .card i{
     color: var(--secondary-color);
+}
+
+#intro .card h3{
+    font-size: 30px;
 }
 
 .button-blue{
@@ -118,6 +131,32 @@ h3{
     text-align: start;
 }
 
+#intro .card{
+    background-color: var(--bg-card);
+    margin-bottom: 10px;
+}
+
+#testimonials .card{
+    background-color: var(--primary-color);
+    color: var(--lightcolor);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#testimonials .user-image{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#testimonials .user-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 
 /*FOOTER*/
@@ -130,6 +169,10 @@ footer{
 
 /*RESPONSIVE*/
 @media screen and (min-width: 768px){
+    .container{
+        max-width: 750px;
+    }
+
     .d-flex{
         display: flex;
         flex-flow: row wrap;
