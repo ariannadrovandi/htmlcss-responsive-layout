@@ -70,12 +70,6 @@ p{
     padding: 6px 30px;
     border-radius: 20px;
     color: var(--lightcolor);
-    background-color: var(--primary-color);
-}
-
-.btn-big{
-    background-color: var(--lightcolor);
-    color: var(--primary-color);
 }
 
 .small-title{
@@ -86,6 +80,9 @@ p{
 .medium-text{
     font-size: 1.1rem;
     font-weight: 700;
+}
+
+.margin-bottom{
     margin-bottom: 1.5rem;
 }
 
@@ -187,13 +184,36 @@ main{
 
 
     /*planning*/
+#planning {
+    color: var(--lightcolor);
+}
+
 #planning .col:first-child img{
-    margin: 60px 0 80px;
+    margin: 60px 0 70px;
 }
 
 #planning .card{
     background-color: var(--lightcolor);
     color: var(--darkcolor);
+}
+
+#planning .text{
+    margin-bottom: 3rem;
+}
+
+#planning h2{
+    margin-bottom: 3.1rem;
+}
+
+#planning .btn-primary{
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 8px 14px;
+    color: var(--darkcolor);
+}
+
+#planning .card{
+    margin-bottom: 3rem;
 }
 
 
@@ -242,6 +262,11 @@ main{
 /*call-to-action*/
 #call-to-action{
     color: var(--lightcolor);
+}
+
+.btn-big{
+    background-color: var(--lightcolor);
+    color: var(--primary-color);
 }
 
 .big-text{
