@@ -361,6 +361,7 @@ main{
 .btn-big{
     background-color: var(--lightcolor);
     color: var(--primary-color);
+    padding: 15px 45px;
 }
 
 .big-text{
@@ -368,11 +369,41 @@ main{
     color: var(--contrast-color);
 }
 
+#call-to-action h4{
+    font-weight: 400;
+}
+
+#call-to-action h4, #call-to-action h2, #call-to-action h5, #call-to-action p, #call-to-action .copy{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+#call-to-action a{
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+}
+
+#call-to-action .copy{
+    font-size: 0.7rem;
+}
 
 /*FOOTER*/
 footer{
     background-color: var(--darkcolor);
     color: var(--lightcolor);
+}
+
+footer p{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer p:first-child{
+    margin-bottom: 3.5rem;
+}
+
+footer p:last-child{
+    margin-top: 3.5rem;
 }
 
 
