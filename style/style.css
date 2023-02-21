@@ -80,10 +80,12 @@ p{
 
 .small-title{
     font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .medium-text{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 
@@ -157,6 +159,11 @@ main{
 #intro .card{
     background-color: var(--bg-card);
     margin-bottom: 10px;
+}
+
+#intro .card i :not(.btn i){
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
 }
 
 #intro .card:first-child{
@@ -265,6 +272,10 @@ footer{
         width: calc((100% / 2) - 10px);
     }
 
+    #about-us .col{
+        padding: 20px;
+    }
+
     #about-us .col:first-child{
         width: calc(60% - 10px);
     }
@@ -327,6 +338,8 @@ footer{
     #planning .col:last-child img{
         width: 90%;
     }
+
+    
 
 }
 
