@@ -61,6 +61,10 @@ img{
     max-width: 100%;
 }
 
+p{
+    line-height: 1.7rem;
+}
+
 .btn{
     display: inline-block;
     padding: 6px 30px;
@@ -73,6 +77,15 @@ img{
     background-color: var(--lightcolor);
     color: var(--primary-color);
 }
+
+.small-title{
+    font-size: 1.5rem;
+}
+
+.medium-text{
+    font-size: 1.2rem;
+}
+
 
 /*HEADER*/
 header{
@@ -108,6 +121,7 @@ ul{
     display: block;
 }
 
+
 /*MAIN*/
 main{
     margin-top: 80px;
@@ -119,15 +133,13 @@ main{
 
 .card{
     padding: 20px;
-    /*color: var(--text-card);*/
+    
 }
 
+
+    /*intro*/
 #intro .card h3, #intro .card i{
     color: var(--secondary-color);
-}
-
-#intro .card h3{
-    font-size: 30px;
 }
 
 .button-blue{
@@ -147,6 +159,27 @@ main{
     margin-bottom: 10px;
 }
 
+#intro .card:first-child{
+    padding-bottom: 0;
+}
+
+#intro .card:first-child img{
+    display: block;
+}
+
+
+    /*planning*/
+#planning .col:first-child img{
+    margin: 40px 0 60px;
+}
+
+#planning .card{
+    background-color: var(--lightcolor);
+    color: var(--darkcolor);
+}
+
+
+    /*testimonials*/
 #testimonials .card{
     background-color: var(--primary-color);
     color: var(--lightcolor);
@@ -168,6 +201,8 @@ main{
     object-fit: cover;
 }
 
+
+    /*features*/
 #features .card{
     background-color: var(--lightcolor);
     color: var(--text-card);
@@ -179,10 +214,14 @@ main{
     color: var(--primary-color);
 }
 
+
+    /*about-us*/
 #about-us .card-text{
     color: var(--primary-color);
 }
 
+
+/*call-to-action*/
 #call-to-action{
     color: var(--lightcolor);
 }
@@ -249,12 +288,56 @@ footer{
     header nav ul{
         display: flex;
     }
+
+    .inner-flex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card-left, #intro .card img{
+        width: calc(50% - 10px);
+    }
+
+    #testimonials .inner-flex{
+        align-items: center;
+    }
+
+    #testimonials .user-image{
+        width: 200px;
+    }
+
+    #testimonials .card-text{
+        width: calc(100% - 210px);
+    }
+
+    #planning .col{
+        width: calc(50% - 10px);
+    }
+
+    #planning .inner-flex{
+        align-items: flex-end;
+    }
+
+    #planning .col:last-child{
+        padding: 0 0 0 50px;
+    }
+
+    #planning .col:last-child img{
+        width: 90%;
+    }
+
 }
 
 @media screen  and (min-width:1200px){
     .container{
         max-width: 1150px;
         margin: 0 auto;
+    }
+
+    #features .card{
+        width: calc((100% / 3) - 10px);
     }
 
 }
