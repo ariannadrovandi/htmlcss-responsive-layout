@@ -412,12 +412,21 @@ footer a{
     text-decoration: underline;
 }
 
+.hamburger:hover~.main-menu{
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: var(--secondary-color);
+    width: 200px;
+}
 
 
 /*RESPONSIVE*/
 @media screen and (min-width: 485px){
     #about-us span{
-        right: 60px;
+        right: 16%;
     }
 }
 
@@ -439,6 +448,7 @@ footer a{
         gap: 10px;
         justify-content: center;
     }
+
     #intro .card{
         width: calc((100% / 3) - 10px);
     }
