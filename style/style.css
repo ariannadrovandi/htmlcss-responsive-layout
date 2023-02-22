@@ -490,8 +490,12 @@ footer a{
         display: none;
     }
 
-    header nav ul{
+    header nav .main-menu{
         display: flex;
+    }
+
+    header nav .main-menu:not(.main-menu:last-child){
+        margin-top: 15px;
     }
 
     header a{
@@ -503,6 +507,7 @@ footer a{
         background-color: var(--lightcolor);
         color: var(--darkcolor);
         padding: 8px;
+        margin: 10px 20px;
     }
 
     .inner-flex{
