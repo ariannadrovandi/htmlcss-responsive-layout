@@ -445,6 +445,7 @@ footer a{
 
     #intro .card:first-child{
         width: calc((100% / 3 * 2) - 10px);
+        justify-content: flex-start;
     }
 
     #features .card{
@@ -549,6 +550,19 @@ footer a{
     .container{
         max-width: 1150px;
         margin: 0 auto;
+    }
+
+    #intro .card:first-child{
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    #intro .card:first-child img{
+        max-width: 250px;
+        position: absolute;
+        bottom: 0;
+        right: 70px;
     }
 
     #features .card{
